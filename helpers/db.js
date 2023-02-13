@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import mongoose, { model, models, Schema } from "mongoose";
 
-const URI = `mongodb+srv://Viper6389:<password>@cluster0.iph03jw.mongodb.net/test?retryWrites=true&w=majority`;
+const URI = `mongodb+srv://Viper6389:${process.env.MONGODB_PASSWORD}@cluster0.iph03jw.mongodb.net/test?retryWrites=true&w=majority`;
 
 const placeSchema = new Schema(
   {
